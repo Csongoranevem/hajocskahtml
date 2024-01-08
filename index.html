@@ -9,9 +9,15 @@
             50%{background-color: rgb(176, 215, 255);}
             100%{background-color: rgb(47, 151, 255);}
         }
-        @keyframes nap {
-            50%{left: 50%; bottom: 45vh;}
-            100%{left: 95%; bottom: 0vh;}
+        @keyframes napX {
+            0%{animation-timing-function: ease-in; left: 0%;}
+            50%{animation-timing-function: ease-out; left: 50%;}
+            100%{left: 95%;}
+        }
+        @keyframes napY {
+            0%{animation-timing-function: ease-ou; bottom: 0vh;}
+            50%{animation-timing-function: ease-in; bottom: 40vh;}
+            100%{bottom: 0vh;}
         }
         @keyframes hajomove {
             0%{left: 0;}
@@ -22,13 +28,16 @@
         .napocska{
             width: 50px;
             height: 50px;
-            animation: nap 4s ease-in-out;
+            animation-name: napX, napY;
+            animation-duration: 4s, 4s;
+
             position: absolute;
             left: 0px;
             bottom: 0px;
             animation-fill-mode: forwards;
             
         }
+
         .hajo{
             width: 150px;
             position: absolute;
@@ -46,6 +55,7 @@
         }
         .viz{
             height: 50vh;
+            background-color: rgb(48, 90, 196);
         }
 
     </style>
