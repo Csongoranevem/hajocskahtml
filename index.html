@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Hajócska</title>
+    <style>
+        @keyframes sotet {
+            50%{background-color: rgb(176, 215, 255);}
+            100%{background-color: rgb(47, 151, 255);}
+        }
+        @keyframes nap {
+            50%{left: 50%; bottom: 45vh;}
+            100%{left: 95%; bottom: 0vh;}
+        }
+        @keyframes hajomove {
+            0%{left: 0;}
+            100%{left: 90%;}
+        }
+
+
+        .napocska{
+            width: 50px;
+            height: 50px;
+            animation: nap 4s ease-in-out;
+            position: absolute;
+            left: 0px;
+            bottom: 0px;
+            animation-fill-mode: forwards;
+            
+        }
+        .hajo{
+            width: 150px;
+            position: absolute;
+            align-self: center;
+            animation: hajomove 4s linear;
+            animation-fill-mode: forwards;
+        }
+
+        .eg{
+            height:50vh;    
+            background-color: rgb(106, 180, 255);
+            animation: sotet 4s;
+            animation-fill-mode:forwards;
+            position: relative;
+        }
+        .viz{
+            height: 50vh;
+        }
+
+    </style>
+</head>
+<body>
+    <div class="eg">
+    <img src="./natural-energy-source-the-sun-transparent-photos-3.png" alt="" class="napocska">
+    </div>
+    <div class="viz">
+
+        <img src="./wooden-vintage-ship-clipart-design-illustration-free-png.png" alt="" class="hajo">
+    </div>
+
+
+</body>
+</html>
