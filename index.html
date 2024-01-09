@@ -17,11 +17,12 @@
         @keyframes napY {
             0%{animation-timing-function: ease-out; bottom: 0vh; transform: rotate(0deg);}
             50%{animation-timing-function: ease-in; bottom: 40vh;}
-            100%{bottom: 0vh; transform: rotate(180deg);}
+            100%{bottom: 0vh; transform: rotate(360deg);}
         }
         @keyframes hajomove {
-            0%{left: 0;}
-            100%{left: 90%;}
+            0%{left: 0; rotate: 0; top: 0vh;}
+            70%{rotate: 45deg;opacity: 100%;}
+            100%{left:95%; opacity: 0%; top: 50vh;}
         }
 
         html{
@@ -36,8 +37,7 @@
             width: 100px;
             height: 100px;
             animation-name: napX, napY;
-            animation-duration: 4s, 4s;
-            animation-delay: 1s;
+            animation-duration: 6s, 6s;
 
             position: absolute;
             left: 0px;
@@ -47,19 +47,18 @@
         }
 
         .hajo{
-            width: 150px;
+            width: 180px;
             position: absolute;
             align-self: center;
-            animation: hajomove 4s linear;
+            animation: hajomove 6s linear;
             animation-fill-mode: forwards;
-            animation-delay: 1s;
         }
 
         .eg{
             width: 100%;
             height:50vh;    
             background-color: rgb(106, 180, 255);
-            animation: sotet 4s;
+            animation: sotet 6s;
             animation-fill-mode:forwards;
             position: relative;
         }
@@ -73,11 +72,10 @@
 </head>
 <body>
     <div class="eg">
-    <img src="./natural-energy-source-the-sun-transparent-photos-3.png" alt="" class="napocska">
+    <img src="napocska.png" alt="" class="napocska">
     </div>
     <div class="viz">
-
-        <img src="./wooden-vintage-ship-clipart-design-illustration-free-png.png" alt="" class="hajo">
+        <img src="repcsi.png" alt="" class="hajo">
     </div>
 
 
